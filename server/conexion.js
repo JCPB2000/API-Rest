@@ -1,4 +1,4 @@
-    // Importación del módulo mysql
+    // módulo mysql
     const mysql = require('mysql');
 
 
