@@ -1,0 +1,59 @@
+<h2 class="mb-4">Web Services y su consumo con Angular</h2>
+
+<!-- Cédula -->
+<div class="mb-3">
+  <input
+    class="form-control"
+    placeholder="Cédula"
+    [(ngModel)]="cedula">
+</div>
+
+<!-- Botón -->
+<div class="mb-4">
+  <button
+    class="btn btn-primary"
+    (click)="buscarUsuario()">
+    Buscar Usuario
+  </button>
+</div>
+
+<!-- Resultado -->
+<div class="mb-3">
+  <label class="form-label">Nombre</label>
+  <input
+    class="form-control"
+    [value]="nombre"
+    readonly>
+</div>
+
+<div class="mb-3">
+  <label class="form-label">Cédula</label>
+  <input
+    class="form-control"
+    [value]="cedulausuario"
+    readonly>
+</div>
+
+<div class="mb-3">
+  <label class="form-label">Teléfono</label>
+  <input
+    class="form-control"
+    [value]="telefono"
+    readonly>
+</div>
+
+<div class="mb-3">
+  <label class="form-label">Dirección</label>
+  <input
+    class="form-control"
+    [value]="direccion"
+    readonly>
+</div>
+
+<div class="mb-3">
+  <label class="form-label">Correo</label>
+  <input
+    class="form-control"
+    [value]="correo"
+    readonly>
+</div>

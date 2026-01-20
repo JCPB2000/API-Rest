@@ -1,0 +1,21 @@
+<h2 class="mb-4 text-center">Web Services y su consumo con Angular</h2>
+
+<div class="container">
+
+  <div
+    *ngFor="let u of usuarios"
+    class="border p-3 mb-2 rounded d-flex justify-content-between align-items-center"
+    [routerLink]="['/actualizarUsuario', u.idusuario]"
+    style="cursor: pointer;"
+  >
+    <div>
+      <strong>{{ u.nombreusuario }}</strong><br>
+      {{ u.cedulausuario }}
+    </div>
+
+    <small class="text-muted">
+      {{ diasDesde(u.fecha_creacion) }}
+    </small>
+  </div>
+
+</div>

@@ -1,0 +1,35 @@
+<h3>Insertar Usuario</h3>
+
+<input
+  class="form-control mb-2"
+  placeholder="Nombre"
+  [(ngModel)]="nombre"
+/>
+
+<input
+  class="form-control mb-2"
+  placeholder="Cedula"
+  [(ngModel)]="cedula"
+/>
+
+<input
+  class="form-control mb-2"
+  placeholder="Telefono"
+  [(ngModel)]="telefono"
+/>
+
+<input
+  class="form-control mb-2"
+  placeholder="Direccion"
+  [(ngModel)]="direccion"
+/>
+
+<input
+  class="form-control mb-3"
+  placeholder="Correo"
+  [(ngModel)]="correo"
+/>
+
+<button class="btn btn-info" (click)="guardar()">
+  Guardar
+</button>
